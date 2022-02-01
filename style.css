@@ -1,0 +1,281 @@
+@font-face {
+    font-family: 'corpo';
+    src: url(imagens/Avoda\ Free\ Trial.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'menu';
+    src: url(imagens/PIXEAB__.TTF) format('truetype');
+}
+@font-face {
+    font-family: 'logo';
+    src: url(imagens/Sketchzone.otf) format('opentype');
+}
+
+:root {
+    --font-logo: 'logo';
+    --font-menu: 'menu';
+    --font-corpo: 'corpo';
+    --azul5: #023373;
+    --azul4: #0468BF;
+    --azul3:  #05AFF2;
+    --azul2: #05C7F2;
+    --azul1: #05DBF2;
+}
+
+* {
+    background-color: var(--azul1);
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+}
+
+header {
+    height: 102px;
+    background-color: var(--azul5);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    align-items: center;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+header > h1 {
+    font-size: 3em;
+    color: var(--azul1);
+    font-family: var(--font-logo);
+    margin-left: 15px;
+    font-weight: lighter;
+    background-color: var(--azul5);
+}
+
+nav {
+    background-color: var(--azul5);
+}
+
+header > nav > ul{
+    background-color: var(--azul5);
+    font-size: .7em;
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 15px;
+    padding-top: 10px;
+    display: inline-flex;
+    gap: 10px;
+    
+}
+
+header > nav > ul > li > a {
+    
+    border-color: var(--azul5);
+    font-family: var(--font-menu);
+    background-color: var(--azul5);
+    color: var(--azul3);
+    padding: 5px;
+}
+
+.link:hover {
+    transition: .5s;
+    font-size: 1.5em;
+}
+
+.camisanike {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex: 1 1 206px;
+    gap: 2px;
+    margin-bottom: 15px;
+    
+}
+
+.camisanike img {
+    border: 2px solid var(--azul4);
+    
+}
+
+.camisanike p {
+    margin-bottom: 10px;
+}
+
+h1#camisasdanike {
+    color: var(--azul5);
+    font-size: 1.8em;
+    margin: 30px;
+    text-align: center;
+    box-shadow: 4px 4px 4px black;
+}
+
+footer {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--azul5);
+    border-radius: 10px 10px 0px 0px;
+}
+
+#div1 {
+    display: inline-flex;
+    align-items: center;
+    background-color: none;
+    background-color: var(--azul5);
+}
+
+#div2 {
+    display: inline-flex;
+    align-items: center;
+    background-color: none;
+    background-color: var(--azul5);
+}
+
+#div2 p {
+    background-color: var(--azul5);
+   
+}
+
+main#inicio {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+h2#camisasdalacoste {
+    color: var(--azul5);
+    font-size: 1.8em;
+    box-shadow: 4px 4px 4px black;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h3#camisasoakley {
+    color: var(--azul5);
+    font-size: 1.8em;
+    box-shadow: 4px 4px 4px black;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#camisarandom {
+    color: var(--azul5);
+    font-size: 1.8em;
+    box-shadow: 4px 4px 4px black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#inicio {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-weight: bold;
+    background-color: var(--azul5);
+    color: snow;
+    text-decoration: none;
+}
+
+footer p::after {
+    color: var(--azul4);
+}
+
+footer h3 {
+    color: var(--azul1);
+    font-weight: bolder;
+    background-color: var(--azul5);
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+
+.oakleysec {
+    margin: auto;
+    max-width: 650px;
+}
+
+#iniciosec {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    min-height: 500px;
+    padding-left: 5px;
+}
+
+.corpo {
+    max-width: 650px;
+    display: flex;
+    flex-flow: column wrap;
+    margin: auto;
+}
+
+#qmsomos {
+    text-align: center;
+    color: var(--azul4);
+    padding-left: 10px;
+    margin-top: 45px;
+    font-size: 1.5em;
+    max-width: 200px;
+    box-shadow: 4px 4px 4px black;
+    margin-bottom: 5px;
+}
+
+#pqcomprar {
+    text-align: center;
+    color: var(--azul4);
+    padding-left: 10px;
+    font-size: 1.5em;
+    max-width: 230px;
+    box-shadow: 4px 4px 4px black;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+#comocomprar {
+    text-align: center;
+    color: var(--azul4);
+    padding-left: 10px;
+    font-size: 1.5em;
+    max-width: 200px;
+    box-shadow: 4px 4px 4px black;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+#promo {
+    color: snow;
+    text-align: center;
+    font-size: 1.7em;
+    
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+.imgback {
+    background-color: var(--azul5);
+}
+
+.inicioparag {
+    text-align: center;
+    font-weight: bold;
+}
+
+.preco {color: var(--azul5);}
+
+.destaque {
+    color: white;
+}
